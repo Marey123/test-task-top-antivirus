@@ -1,0 +1,435 @@
+:root {
+    --primary-color: #3683F7;
+    --secondary-color: #FFB800;
+    --background-color: #F3F5F6;
+    --text-color: #2B2929;
+    --header-footer-bg: #000000;
+    --button-gradient-start: #130993;
+    --button-gradient-middle: #174D8F;
+    --button-gradient-end: #1DAA81;
+    --white-color: #FFFFFF;
+    --grey-color: #929292;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.font-bebas {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    background: var(--header-footer-bg);
+    margin-bottom: 151px;
+}
+
+.header-title,
+.header-title-yellow,
+.header-title-main {
+    font-size: 21px;
+}
+
+.header-title {
+    padding: 15px 0 9px 0;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.header-title-yellow {
+    padding-right: 11px;
+    border-right: 1px solid var(--white-color);
+    margin-right: 10px;
+    color: var(--secondary-color);
+}
+
+.header-title-main {
+    color: var(--white-color);
+    font-weight: 300;
+    line-height: 0;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.choosing-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choosing-product-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 106px;
+}
+
+.product-plan {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-plan-content {
+    background: var(--background-color);
+    padding: 71px 60px 26px;
+}
+
+.product-plan-item {
+    width: 360px;
+}
+
+.product-plan-price {
+    position: relative;
+    margin: 0 auto -50px;
+    box-shadow: 0 0 4px 0 #00000040;
+    background-color: var(--white-color);
+    padding: 30px 0 22px 0;
+    width: 240px;
+}
+
+.product-plan-price h3 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.product-plan-price span {
+    font-size: 18px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.product-plan-price .best-value {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    width: 80px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0;
+}
+
+.discounted-price {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    justify-content: center;
+    color: var(--grey-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 9px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.discount-img:before {
+    content: url("images/off.svg");
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100px;
+    height: 100px;
+}
+
+.product-plan-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 31px;
+}
+
+.product-plan-name h2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.product-plan-name b {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.product-plan-button {
+    position: relative;
+    text-decoration: none;
+    padding: 15px 23px 14px 0;
+    max-width: 190px;
+    width: 100%;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    text-align: center;
+    color: var(--white-color);
+    background: linear-gradient(0.00deg, var(--button-gradient-start) -0.014%, var(--button-gradient-middle) 35.008%, var(--button-gradient-end) 64.91%);
+}
+
+.product-plan-button:after {
+    content: url("images/download.svg");
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    right: 11px;
+    transform: translateY(-50%);
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downloaded-info-arrow {
+    position: fixed;
+    top: 140px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 4px 0 #00000040;
+    color: var(--white-color);
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.downloaded-info-arrow.active {
+    opacity: 1;
+}
+
+.downloaded-info-arrow-block {
+    padding: 11px 0 28px 0;
+    width: 160px;
+}
+
+.downloaded-info-arrow-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.downloaded-info-arrow-text_open {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+@keyframes downloadAnimation {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.arrow-animation {
+    animation: downloadAnimation 1s infinite alternate;
+}
+
+.arrow-up {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid var(--primary-color);
+}
+
+.downloaded-info-arrow.arrow-chrome {
+    top: unset;
+    bottom: 160px;
+    left: 20px;
+    right: unset;
+}
+
+.arrow-chrome .arrow-up {
+    position: absolute;
+    top: unset;
+    bottom: -80px;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 80px solid var(--primary-color);
+    border-bottom: 0;
+}
+
+.footer {
+    background: var(--header-footer-bg);
+    padding: 8px 0 10px 0;
+}
+
+.footer-title {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.footer-copyright {
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-yellow {
+    color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        margin-bottom: 30px;
+    }
+
+    .header-title, .footer-title {
+        font-size: 18px;
+    }
+
+    .choosing-product-title {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .product-plan-item {
+        width: 300px;
+    }
+
+    .product-plan-price h3 {
+        font-size: 40px;
+    }
+
+    .product-plan-price span {
+        font-size: 16px;
+    }
+
+    .product-plan-name h2 {
+        font-size: 16px;
+    }
+
+    .product-plan-name b {
+        font-size: 16px;
+    }
+
+    .product-plan-button {
+        font-size: 16px;
+    }
+
+    .d-none-mob {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .product-plan-item {
+        width: 300px;
+    }
+
+    .product-plan-price h3 {
+        font-size: 40px;
+    }
+
+    .product-plan-price span {
+        font-size: 16px;
+    }
+
+    .product-plan-name h2 {
+        font-size: 16px;
+    }
+
+    .product-plan-name b {
+        font-size: 16px;
+    }
+
+    .product-plan-button {
+        font-size: 16px;
+    }
+}
